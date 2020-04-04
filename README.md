@@ -197,16 +197,76 @@ git push
 git config credential.helper store
 . not necessary user and password
 
+git push
+
 
 #### 07. Pegar um projeto já iniciado, para trabalhar com o time
 
+. Pegar o link de um projeto no servidor remoto
+
+git clone https://github.com/maykbrito/instagram-profile-header.git
+
+ls -al
+
+cd instagram-profile-header
+
+git status
 
 
 #### 08. Necessário resolver um conflito.
 
+git checkout -b teste
+
+ls -al
+
+. vim package.json
+. Tirar a linha: "description"
+. :wq
+
+git status
+
+git commit -am "update package.json"     ( or 'git add .' and 'git commit -m ""')
+
+git checkout master
+
+. vim package.json
+. Alterar a linha: "description": "alterado"
+. :wq
+
+git status
+
+git add .
+
+git commit -m "package.json update (new)"
+
+git status
+
+git branch
+
+git merge teste
+
+. Abri o arquivo "package.json" e corrigir o conflito
+. save
+
+git status
+
+git commit -am "conflict resolved"
+
+git status
+
+git log
+
+cd ..
+
+ls -l
+
+rm -Rf instagram-profile-header
+
+ls -al
 
 
 #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
+
 
 
 
@@ -223,48 +283,7 @@ git config credential.helper store
 
 
 
-git clone <link Github>
 
-ls -al
-
-git checkout -b teste
-
-ls -al
-
-. tirar uma linha do arquivo package.json ("description")
-. save
-
-git status
-
-git add .
-
-git commit -am "update package.json"     ( or 'git add .' and 'git commit -m ""')
-
-git checkout master
-
-. alterar uma linha do arquivo package.json ("description": "alterando")
-. save
-
-git status
-
-git add .
-
-git commit -m "package.json update"
-
-git status
-
-git merge teste
-
-. abri o arquivo "package.json" e corrigir o conflito
-. save
-
-git status
-
-git commit -am "conflict resolved"
-
-git status
-
-git log
 
 . ir no github na nuvem e alterar o arquivo README.md (remover as ultimas 3 linhas em branco)
 . dar o commit pelo github
