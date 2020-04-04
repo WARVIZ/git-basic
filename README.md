@@ -308,10 +308,3 @@ git status
 git pull
 
 git push  ( para enviar alteraçções para o repositório remoto )
-
-
-
-
-
-
-
