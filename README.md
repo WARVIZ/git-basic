@@ -22,7 +22,7 @@ https://git-scm.com/download
 - [x] 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
 - [x] 10. Voltar um arquivo para um determinado momento da linha do tempo.
-- [x] 11. Recuperar algo deletado.
+- [x] 11. Recuperar um arquivo deletado.
 
 * `git init` // inicia a linha do tempo
 * `git add` // adiciona ou atualiza mudanças para irem para a linha do tempoo
@@ -277,32 +277,14 @@ git status      ( nenhuma alteração para subir )
 
 git pull
 
+. Ao final do dia subir todas as alerações
 
-
-
+git push
 
 
 #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
-
-
-#### 11. Recuperar algo deletado.
-
-
-
-
-
-
-
-
-
-
-git pull
-
-. ver as alterações
-
-
-. Voltar o arquivo package.json 
+. Voltar o arquivo package.json ( encontrar o momento para retornar )
 git log
 
 git checkout <id> -- package.json
@@ -316,11 +298,42 @@ git status
 
 git pull
 
+
+#### 11. Recuperar um arquivo deletado.
+
+11.1. [ antes 'commit' ] Deletado um arquivo do repositório local.
+
+ls -al
+
+git status      ( avisa que o arquivo foi deletado )
+
+git checkout -- <nome arquivo>      ( retorna o arquivo do ultimo log )
+
+git status      ( avisa que tem arquivo para 'git add' e 'git commit' )
+
+
+11.2. [ depois 'commit' ] Deletado um arquivo do repositório local.
+
+git status      ( avisa que o arquivo foi deletado )
+
+git commit -am "delete <arquivo>"
+
+git status
+
+git checkout -- <nome arquivo>      ( retorna erro, o arquivo do ultimo log não existe )
+
+git log
+
+git checkout <id log> -- <nome arquivo>      ( retorna erro, o arquivo do ultimo log não existe )
+
+ls -al
+
+git status
+
+git add .
+
+git commit -m "restore <arquivo>"
+
 git push  ( para enviar alteraçções para o repositório remoto )
 
-
-
-
-
-
-
+< End >
