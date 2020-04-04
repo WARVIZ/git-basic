@@ -267,6 +267,18 @@ ls -al
 
 #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
+. Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
+. Alterar o arquivo README.md, retirando ou adicionando ou deletando linha(s)
+. Efetuar 'commit' no servidor remoto
+
+. Ir para o repositório local
+
+git status      ( nenhuma alteração para subir )
+
+git pull
+
+
+
 
 
 
@@ -284,9 +296,6 @@ ls -al
 
 
 
-
-. ir no github na nuvem e alterar o arquivo README.md (remover as ultimas 3 linhas em branco)
-. dar o commit pelo github
 
 git pull
 
@@ -308,3 +317,10 @@ git status
 git pull
 
 git push  ( para enviar alteraçções para o repositório remoto )
+
+
+
+
+
+
+
