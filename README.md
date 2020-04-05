@@ -38,23 +38,29 @@ https://git-scm.com/download
 * `git pull` // puxa do repositório remoto
 
 
-#### 01. Criar pontos na história de produção do projeto.
+> #### 01. Criar pontos na história de produção do projeto.
+---
 
+```
 git init
+```
 
 touch landingpage.html
 vim landingpage.html
 . Adiciona: landing page finalizada
 . :wq
 
+```
 git add landingpage.html
 
 git commit -m "added landing page"
 
 git log
+```
 
 
-#### 02. Verificar mudanças feitas no seu projeto.
+> #### 02. Verificar mudanças feitas no seu projeto.
+***
 
 vim landingpage.html
 . Alterar: landing page alterada
@@ -75,7 +81,8 @@ git show f91b8f5
 git show
 
 
-#### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
+> #### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
+___
 
 git branch feature/cart
 
@@ -127,7 +134,7 @@ git status
 git branch
 
 
-#### 04. Adicionar as novas funcionalidades ao projeto em produção.
+> #### 04. Adicionar as novas funcionalidades ao projeto em produção.
 
 git checkout master
 
@@ -146,14 +153,14 @@ git log
 git show
 
 
-#### 05. Deletar a 'branch' da nova funcionalidade, depois de aplicar no projeto.
+> #### 05. Deletar a 'branch' da nova funcionalidade, depois de aplicar no projeto.
 
 git branch -D feature/cart
 
 git branch
 
 
-#### 06. Colocar o projeto na nuvem.
+> #### 06. Colocar o projeto na nuvem.
 
 . Criar uma conta em um servidor remoto 'git' (GitHub*, GitLab, BitBucket,...)
 . Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )
@@ -200,7 +207,7 @@ git config credential.helper store
 git push
 
 
-#### 07. Pegar um projeto já iniciado, para trabalhar com o time
+> #### 07. Pegar um projeto já iniciado, para trabalhar com o time
 
 . Pegar o link de um projeto no servidor remoto
 
@@ -213,7 +220,7 @@ cd instagram-profile-header
 git status
 
 
-#### 08. Necessário resolver um conflito.
+> #### 08. Necessário resolver um conflito.
 
 git checkout -b teste
 
@@ -265,7 +272,7 @@ rm -Rf instagram-profile-header
 ls -al
 
 
-#### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
+> #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
 . Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
 . Alterar o arquivo README.md, retirando ou adicionando ou deletando linha(s)
@@ -282,7 +289,7 @@ git pull
 git push
 
 
-#### 10. Voltar um arquivo para um determinado momento da linha do tempo.
+> #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
 . Voltar o arquivo package.json ( encontrar o momento para retornar )
 git log
@@ -299,7 +306,7 @@ git status
 git pull
 
 
-#### 11. Recuperar um arquivo deletado.
+> #### 11. Recuperar um arquivo deletado.
 
 11.1. [ antes 'commit' ] Deletado um arquivo do repositório local.
 
@@ -337,3 +344,75 @@ git commit -m "restore <arquivo>"
 git push  ( para enviar alteraçções para o repositório remoto )
 
 < End >
+
+
+# Alias no Git
+
+Arquivo: .gitconfig
+
+[alias]
+  ci = commit
+  co = checkout
+  cm = checkout master
+  cb = checkout -b
+  st = status -sb
+  sf = show --name-only
+  lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+  incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+  outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+  unstage = reset HEAD --
+  undo = checkout --
+  rollback = reset --soft HEAD~1
+
+.: Menos usados
+  rollforward = commit -c ORIG_HEAD
+  conflicts = !git ls-files -u | cut -f 2 | sort -u
+
+
+[alias]
+    pom = push origin master -u
+    ps = push
+    ci = commit
+    co = checkout
+    cm = checkout master
+    cb = checkout -b
+    st = status -sb
+    sf = show --name-only
+    lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+    incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
+    outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' @{u}..)
+    unstage = reset HEAD --
+    undo = checkout --
+    rollback = reset --soft HEAD~1
+
+
+. Com isso basta digitar git ci qualquer mensagem (isso mesmo! sem double quotes...) para agilizar e facilitar a nossa vida.
+ci = "!f() { git commit -m \"$*\"; }; f"
+
+. Deixo como sugestão também, um que uso e gosto muito, que basicamente serve para apagar todas as branches locais exceto algumas:
+brclear = !git branch | grep -v 'master\\|development\\|staging' | xargs git branch -D
+
+. git kraken
+
+. Muito legal, uso o alias do Oh My Zsh mas adicionei alguns desses no ZSH_CUSTOM. Ficou show!
+
+. Git Flow // Dicionário do Programador
+https://www.youtube.com/watch?v=oweffeS8TRc
+
+. Padronizando mensagens de commit do Git | Code/Drops #12
+https://www.youtube.com/watch?v=erInHkjxkL8
+
+. Debug de aplicações Node.js com VSCode | Code/Drops #11
+https://www.youtube.com/watch?v=bVAhNaxBEjM
+
+. Github CLI está no ar | Code/Drops #19    ( CLI -> Command-line Interface )
+https://www.youtube.com/watch?v=u3V7mSPkYyk
+
+. CodeQuinta #5 - Fluxo Git & Github
+https://www.youtube.com/watch?v=2T2l2rGRzXs
+
+. SOLID (O básico para você programar melhor) // Dicionário do Programador
+https://www.youtube.com/watch?v=mkx0CdWiPRA
+
+. 
+
