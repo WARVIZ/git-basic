@@ -27,23 +27,22 @@ https://git-scm.com/download
 
 Comandos | Descrição
 -------- | ---------
-`git init    ` | // inicia a linha do tempo
-`git add     ` | // adiciona ou atualiza mudanças para irem para a linha do tempoo
-`git commit  ` | // adiciona um ponto na linha do tempo
-`git log     ` | // visualiza os pontos na linha do tempo / commit
-`git status  ` | // informa o estado das alterações do nosso projeto
-`git show    ` | // apresenta determinado ponto na história
-`git branch  ` | // gerenciar novas linhas do tempo
-`git checkout` | // manipula as linhas do tempo
-`git merge   ` | // unir linhas do tempo
-`git push    ` | // envia alterações locais para o repositório remoto
-`git clone   ` | // clonar um projeto / repositório
-`git pull    ` | // puxa do repositório remoto
+`git init    ` |  Inicia a linha do tempo
+`git add     ` |  Adiciona ou atualiza mudanças para irem para a linha do tempoo
+`git commit  ` |  Adiciona um ponto na linha do tempo
+`git log     ` |  Visualiza os pontos na linha do tempo / commit
+`git status  ` |  Informa o estado das alterações do nosso projeto
+`git show    ` |  Apresenta determinado ponto na história
+`git branch  ` |  Gerenciar novas linhas do tempo
+`git checkout` |  Manipula as linhas do tempo
+`git merge   ` |  Unir linhas do tempo
+`git push    ` |  Envia alterações locais para o repositório remoto
+`git clone   ` |  Clonar um projeto / repositório
+`git pull    ` |  Puxa do repositório remoto
 
 
 
 > #### 01. Criar pontos na história de produção do projeto.
----
 
 ```
 git init
@@ -64,7 +63,6 @@ git log
 
 
 > #### 02. Verificar mudanças feitas no seu projeto.
-***
 
 vim landingpage.html
 . Alterar: landing page alterada
@@ -86,7 +84,6 @@ git show
 
 
 > #### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
-___
 
 git branch feature/cart
 
