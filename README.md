@@ -180,7 +180,7 @@ git branch
 
 #### 06. Colocar o projeto na nuvem.
 
-- Criar uma conta em um servidor remoto 'git' (*GitHub*, GitLab, BitBucket,...)
+- Criar uma conta em um servidor remoto 'git' (**GitHub**, GitLab, BitBucket,...)
 - Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )
 
 Via | Link
@@ -224,20 +224,22 @@ git status
 git log
 
 git push
-. user and password
+```
+*Enter user and password*
 
-. Olhar o repositório 'git-basic' no servidor remoto ( mostra os arquivos )
+> Olhar o repositório 'git-basic' no servidor remoto ( mostra os arquivos )
+>
+> **Nota:** Para não precisar adicionar 'user' e 'password'
 
-[ Nota: ] Para não precisar adicionar 'user' e 'password'
+```
 git config credential.helper store
-. not necessary user and password
 
-git push
+git push origin master
 ```
 
 #### 07. Pegar um projeto já iniciado, para trabalhar com o time
 
-. Pegar o link de um projeto no servidor remoto
+> Pegar o link de um projeto no servidor remoto
 
 ```
 git clone https://github.com/maykbrito/instagram-profile-header.git
@@ -258,9 +260,9 @@ ls -al
 ```
 
 ```
-. vim package.json
-. Tirar a linha: "description"
-. :wq
+> vim package.json
+>  Tirar a linha: "description"
+> :wq
 ```
 
 ```
@@ -291,8 +293,8 @@ git branch
 git merge teste
 ```
 
-. Abri o arquivo "package.json" e corrigir o conflito
-. save
+> Abri o arquivo "package.json" e corrigir o conflito
+> save
 
 ```
 git status
@@ -315,11 +317,11 @@ ls -al
 
 #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
-. Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
-. Alterar o arquivo README.md, retirando ou adicionando ou deletando linha(s)
-. Efetuar 'commit' no servidor remoto
+> 1. Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
+> 2. Alterar o arquivo README.md, retirando ou adicionando ou deletando linha(s)
+> 3. Efetuar 'commit' no servidor remoto
 
-. Ir para o repositório local
+###### Ir para o repositório local
 
 ```
 git status      ( nenhuma alteração para subir )
@@ -334,7 +336,7 @@ git push
 
 #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
-. Voltar o arquivo package.json ( encontrar o momento para retornar )
+> Voltar o arquivo package.json ( encontrar o momento para retornar )
 
 ```
 git log
