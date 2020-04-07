@@ -185,8 +185,8 @@ git branch
 
 Via | Link
 --- | ----
-HTTP | https://github.com/carvalholc/git-basic.git 
-SSH | git@github.com:carvalholc/git-basic.git 
+HTTP | [https://github.com/carvalholc/git-basic.git]() 
+SSH | [git@github.com:carvalholc/git-basic.git]()
 
 
 ```
