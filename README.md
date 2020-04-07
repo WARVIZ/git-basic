@@ -24,6 +24,7 @@ https://git-scm.com/download
 - [x] 10. Voltar um arquivo para um determinado momento da linha do tempo.
 - [x] 11. Recuperar um arquivo deletado.
 
+### Tabela de Comandos Git Utilizados
 
 Comandos | Descrição
 -------- | ---------
@@ -41,8 +42,7 @@ Comandos | Descrição
 `git pull    ` |  Puxa do repositório remoto
 
 
-
-> #### 01. Criar pontos na história de produção do projeto.
+#### 01. Criar pontos na história de produção do projeto.
 
 ```
 git init
@@ -64,10 +64,13 @@ git log
 
 > #### 02. Verificar mudanças feitas no seu projeto.
 
+```
 vim landingpage.html
 . Alterar: landing page alterada
 . :wq
+```
 
+```
 git status
 
 git add landingpage.html
@@ -81,19 +84,24 @@ git log
 git show f91b8f5
 
 git show
-
+```
 
 > #### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
 
+```
 git branch feature/cart
 
 git checkout feature/cart
+```
 
+```
 touch cart.html
 . vim cart.html
 . Adicionar: carrinho em construção
 . :wq
+```
 
+```
 git status
 
 git branch
@@ -115,11 +123,15 @@ git checkout master
 ls -al     ( não tem cart.html )
 
 git checkout feature/cart
+```
 
+```
 . vim cart.html
 . Alterar: carrinho finalizado
 . :wq
+```
 
+```
 git status
 
 git add car*
@@ -133,10 +145,11 @@ ls -al     ( não tem cart.html )
 git status
 
 git branch
-
+```
 
 > #### 04. Adicionar as novas funcionalidades ao projeto em produção.
 
+```
 git checkout master
 
 ls -al     ( não tem cart.html )
@@ -152,13 +165,15 @@ git status
 git log
 
 git show
-
+```
 
 > #### 05. Deletar a 'branch' da nova funcionalidade, depois de aplicar no projeto.
 
+```
 git branch -D feature/cart
 
 git branch
+```
 
 
 > #### 06. Colocar o projeto na nuvem.
@@ -169,6 +184,7 @@ git branch
 HTTP: git remote add origin https://github.com/carvalholc/git-basic.git
 SSH : git remote add origin git@github.com:carvalholc/git-basic.git
 
+```
 git remote -v
 
 git push -u origin master     ( somente no primeiro push )
@@ -181,11 +197,15 @@ git remote
 git remote rm <branch>
 
 git status
+```
 
+```
 . vim landingpage.html
 . Alterar: landing page alterado (1)
 . :wq
+```
 
+```
 git status
 
 git add .
@@ -206,12 +226,13 @@ git config credential.helper store
 . not necessary user and password
 
 git push
-
+```
 
 > #### 07. Pegar um projeto já iniciado, para trabalhar com o time
 
 . Pegar o link de um projeto no servidor remoto
 
+```
 git clone https://github.com/maykbrito/instagram-profile-header.git
 
 ls -al
@@ -219,28 +240,37 @@ ls -al
 cd instagram-profile-header
 
 git status
-
+```
 
 > #### 08. Necessário resolver um conflito.
 
+```
 git checkout -b teste
 
 ls -al
+```
 
+```
 . vim package.json
 . Tirar a linha: "description"
 . :wq
+```
 
+```
 git status
 
 git commit -am "update package.json"     ( or 'git add .' and 'git commit -m ""')
 
 git checkout master
+```
 
+```
 . vim package.json
 . Alterar a linha: "description": "alterado"
 . :wq
+```
 
+```
 git status
 
 git add .
@@ -252,10 +282,12 @@ git status
 git branch
 
 git merge teste
+```
 
 . Abri o arquivo "package.json" e corrigir o conflito
 . save
 
+```
 git status
 
 git commit -am "conflict resolved"
@@ -271,6 +303,7 @@ ls -l
 rm -Rf instagram-profile-header
 
 ls -al
+```
 
 
 > #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
@@ -281,6 +314,7 @@ ls -al
 
 . Ir para o repositório local
 
+```
 git status      ( nenhuma alteração para subir )
 
 git pull
@@ -288,11 +322,14 @@ git pull
 . Ao final do dia subir todas as alerações
 
 git push
+```
 
 
 > #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
 . Voltar o arquivo package.json ( encontrar o momento para retornar )
+
+```
 git log
 
 git checkout <id> -- package.json
@@ -305,12 +342,13 @@ git commit -am "restore package.json"
 git status
 
 git pull
-
+```
 
 > #### 11. Recuperar um arquivo deletado.
 
-11.1. [ antes 'commit' ] Deletado um arquivo do repositório local.
+##### 11.1. [ antes 'commit' ] Deletado um arquivo do repositório local.
 
+```
 ls -al
 
 git status      ( avisa que o arquivo foi deletado )
@@ -318,10 +356,11 @@ git status      ( avisa que o arquivo foi deletado )
 git checkout -- <nome arquivo>      ( retorna o arquivo do ultimo log )
 
 git status      ( avisa que tem arquivo para 'git add' e 'git commit' )
+```
 
+##### 11.2. [ depois 'commit' ] Deletado um arquivo do repositório local.
 
-11.2. [ depois 'commit' ] Deletado um arquivo do repositório local.
-
+```
 git status      ( avisa que o arquivo foi deletado )
 
 git commit -am "delete <arquivo>"
@@ -343,6 +382,7 @@ git add .
 git commit -m "restore <arquivo>"
 
 git push  ( para enviar alteraçções para o repositório remoto )
+```
 
 < End >
 
@@ -415,5 +455,9 @@ https://www.youtube.com/watch?v=2T2l2rGRzXs
 . SOLID (O básico para você programar melhor) // Dicionário do Programador
 https://www.youtube.com/watch?v=mkx0CdWiPRA
 
-. 
 
+. Testes Automátizados ( Técnica TDD )
+. Git Flow
+. Integração Continua
+. Build Continuo
+. Deploy Continuo
