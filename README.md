@@ -180,11 +180,11 @@ git branch
 
 #### 06. Colocar o projeto na nuvem.
 
-***. Criar uma conta em um servidor remoto 'git' (GitHub*, GitLab, BitBucket,...)***
-***. Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )***
+- . Criar uma conta em um servidor remoto 'git' (GitHub*, GitLab, BitBucket,...)
+- . Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )
 
-> HTTP: git remote add origin https://github.com/carvalholc/git-basic.git
-> SSH : git remote add origin git@github.com:carvalholc/git-basic.git
+... HTTP: git remote add origin https://github.com/carvalholc/git-basic.git
+... SSH : git remote add origin git@github.com:carvalholc/git-basic.git
 
 ```
 git remote -v
