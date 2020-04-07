@@ -42,16 +42,18 @@ Comandos | Descrição
 `git pull    ` |  Puxa do repositório remoto
 
 
-#### 01. Criar pontos na história de produção do projeto.
+#### 01. Criar pontos na história da criação do projeto.
 
 ```
 git init
 ```
 
+```
 touch landingpage.html
 vim landingpage.html
 . Adiciona: landing page finalizada
 . :wq
+```
 
 ```
 git add landingpage.html
