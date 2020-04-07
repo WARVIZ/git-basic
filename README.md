@@ -184,7 +184,7 @@ git branch
 - Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )
 
 Via | Link
----   ----
+--- | ----
 HTTP | https://github.com/carvalholc/git-basic.git 
 SSH | git@github.com:carvalholc/git-basic.git 
 
