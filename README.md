@@ -64,7 +64,7 @@ git log
 ```
 
 
-> #### 02. Verificar mudanças feitas no seu projeto.
+#### 02. Verificar mudanças feitas no seu projeto.
 
 ```
 vim landingpage.html
@@ -88,7 +88,7 @@ git show f91b8f5
 git show
 ```
 
-> #### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
+#### 03. Começar uma nova funcionalidade no projeto, sem estragar o que já foi feito.
 
 ```
 git branch feature/cart
@@ -149,7 +149,7 @@ git status
 git branch
 ```
 
-> #### 04. Adicionar as novas funcionalidades ao projeto em produção.
+#### 04. Adicionar as novas funcionalidades ao projeto em produção.
 
 ```
 git checkout master
@@ -169,7 +169,7 @@ git log
 git show
 ```
 
-> #### 05. Deletar a 'branch' da nova funcionalidade, depois de aplicar no projeto.
+#### 05. Deletar a 'branch' da nova funcionalidade, depois de aplicar no projeto.
 
 ```
 git branch -D feature/cart
@@ -178,7 +178,7 @@ git branch
 ```
 
 
-> #### 06. Colocar o projeto na nuvem.
+#### 06. Colocar o projeto na nuvem.
 
 . Criar uma conta em um servidor remoto 'git' (GitHub*, GitLab, BitBucket,...)
 . Crir um repositório para o projeto no servidor remoto ( nome repositório: git-basic )
@@ -230,7 +230,7 @@ git config credential.helper store
 git push
 ```
 
-> #### 07. Pegar um projeto já iniciado, para trabalhar com o time
+#### 07. Pegar um projeto já iniciado, para trabalhar com o time
 
 . Pegar o link de um projeto no servidor remoto
 
@@ -244,7 +244,7 @@ cd instagram-profile-header
 git status
 ```
 
-> #### 08. Necessário resolver um conflito.
+#### 08. Necessário resolver um conflito.
 
 ```
 git checkout -b teste
@@ -308,7 +308,7 @@ ls -al
 ```
 
 
-> #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
+#### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
 . Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
 . Alterar o arquivo README.md, retirando ou adicionando ou deletando linha(s)
@@ -327,7 +327,7 @@ git push
 ```
 
 
-> #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
+#### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
 . Voltar o arquivo package.json ( encontrar o momento para retornar )
 
@@ -346,7 +346,7 @@ git status
 git pull
 ```
 
-> #### 11. Recuperar um arquivo deletado.
+#### 11. Recuperar um arquivo deletado.
 
 ##### 11.1. [ antes 'commit' ] Deletado um arquivo do repositório local.
 
@@ -386,7 +386,7 @@ git commit -m "restore <arquivo>"
 git push  ( para enviar alteraçções para o repositório remoto )
 ```
 
-< End >
+### < End >
 
 
 # Alias no Git
