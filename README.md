@@ -259,11 +259,9 @@ git checkout -b teste
 ls -al
 ```
 
-```
 > vim package.json
 >  Tirar a linha: "description"
 > :wq
-```
 
 ```
 git status
@@ -273,11 +271,9 @@ git commit -am "update package.json"     ( or 'git add .' and 'git commit -m ""'
 git checkout master
 ```
 
-```
-. vim package.json
-. Alterar a linha: "description": "alterado"
-. :wq
-```
+>  vim package.json
+> Alterar a linha: "description": "alterado"
+> :wq
 
 ```
 git status
@@ -314,7 +310,6 @@ rm -Rf instagram-profile-header
 ls -al
 ```
 
-
 #### 09. Antes de enviar a resolução, precisamos atualizar o projeto local.
 
 > 1. Simular que um outro desenvolvedor tenha alterado algo do projeto no servidor remoto
@@ -327,12 +322,13 @@ ls -al
 git status      ( nenhuma alteração para subir )
 
 git pull
-
-. Ao final do dia subir todas as alerações
-
-git push
 ```
 
+> Ao final do dia subir todas as alerações
+
+```
+git push
+```
 
 #### 10. Voltar um arquivo para um determinado momento da linha do tempo.
 
@@ -342,8 +338,11 @@ git push
 git log
 
 git checkout <id> -- package.json
-. retornou o "description" para ""
+```
 
+> Retornou o "description" para ""
+
+```
 git status
 
 git commit -am "restore package.json"
