@@ -43,5 +43,5 @@ Comandos | Descrição
 
 
 #### Sumário Git & GitHub
-* [Exemplos Comandos Git]()
-* [Markdown no GitHub]()
+* [Exemplos Comandos Git](exploGit.md)
+* [Markdown no GitHub](markdown.md)
