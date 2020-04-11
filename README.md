@@ -41,7 +41,12 @@ Comandos | Descrição
 `git clone   ` |  Clonar um projeto / repositório
 `git pull    ` |  Puxa do repositório remoto
 
+> **Nota:** Para não precisar adicionar 'user' e 'password' todo vez que efetuar o `git push`.
+```
+git config credential.helper store
+```
 
 #### Sumário Git & GitHub
 * [Exemplos Comandos Git](exploGit.md)
 * [Markdown no GitHub](markdown.md)
+* [To Do](ToDo.md)
