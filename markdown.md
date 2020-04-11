@@ -7,10 +7,11 @@ A **Linguagem Markdown** no *GitHub* pode ser utilizada em:
 * Nas **ISSUE**
 * Nas **PULL REQUEST**
 
+### Markdown na Prática
 
-**Negrito**			__Negrito __
-*Italico* 			_Italico_
-~~Subscrito~~
+Como utilizar palavras em **Negrito**. Existe mais uma forma de palavra em __Negrito__.
+Como utilizar palavras em *Italico*. Existe mais uma forma de palavra em _Italico_.
+Como utilizar palavras com ~~Subscrito~~.
 
 # Título Nivel 1
 ## Título Nivel 2
@@ -19,59 +20,59 @@ A **Linguagem Markdown** no *GitHub* pode ser utilizada em:
 ##### Título Nivel 5
 ###### Título Nivel 6
 
-Linha Horizontal
+### Linha Horizontal (modo 1)
 ---
 
-Linha Horizontal
+### Linha Horizontal (modo 2)
 ***
 
-Combinações
-__*Negrito e Italico*__
+### Combinações
+Como utilizar palavras em __*Negrito e Italico*__.
 
 
-Listas Numeradas
+### Listas Numeradas
 
 1. Teste
 1. Teste 2
 1. Teste 3
 1. Teste 4
 
-Listas Numeradas c/ Subitem
+### Listas Numeradas c/ Subitem
 
 1. Teste
 1. Teste 2
-  1. Teste 3     (dois espaços)
+  1. Teste 3 (dois espaços)
   1. Teste 4
 1. Teste 5
 
-Listas Demarcada
+### Listas Demarcada
 
 * Teste
 * Teste 2
-  * Teste 3     (dois espaços)
+  * Teste 3 (dois espaços)
   * Teste 4
 * Teste 5
 
 
-ou
+### ou
 
 - Teste
 - Teste 2
-  - Teste 3     (dois espaços)
+  - Teste 3 (dois espaços)
   - Teste 4
 - Teste 5
 
 
-Lista de Tarefas
+### Lista de Tarefas
 
 - [x] Teste
 - [x] Teste 2
-  - [ ] Teste 3     (dois espaços)
+  - [ ] Teste 3 (dois espaços)
   - [ ] Teste 4
 - [ ] Teste 5
 
 
-Adionar Imagem
+### Adionar Imagem
 . Pegar uma imagem .png da sua máquina (PC) 
 Nota: Não utilizar imagens muito grandes, usar de 400 a 500 px de largura
 . Arrastar e soltar (drag and drop) a imagem abaixo da caixa de texto da 'ISSUE', onde tem a mensagem:
@@ -80,13 +81,13 @@ Nota: Não utilizar imagens muito grandes, usar de 400 a 500 px de largura
 ![<descrição da imegem>](<caminho da imagem>)
 
 
-Adicionar Links
+### Adicionar Links
 . Semelhante ao da imagem, tirando '!'
 
 [Acesse meu GitHub](<link http://...>)
 
 
-Tabelas
+### Tabelas
 
 Nro. Aluno | Nome | Nota
 ---|---|---
@@ -95,13 +96,13 @@ Nro. Aluno | Nome | Nota
 3|Luis|9
 
 
-Comando
+### Comando
 
 Não entendo para que serve o comando document.getElementById() da linguagem JavaScript.
 Não entendo para que serve o comando `document.getElementById()` da linguagem JavaScript.
 
 
-Olha meu programa em Python
+Exemplo de programa em Python
 ```
 num = int(input('Digite um valor: '))
 if num % 2 == 0:
