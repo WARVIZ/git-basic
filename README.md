@@ -29,7 +29,7 @@ https://git-scm.com/download
 Comandos | Descrição
 -------- | ---------
 `git init    ` |  Inicia a linha do tempo
-`git add     ` |  Adiciona ou atualiza mudanças para irem para a linha do tempoo
+`git add     ` |  Adiciona ou atualiza mudanças para irem para a linha do tempo
 `git commit  ` |  Adiciona um ponto na linha do tempo
 `git log     ` |  Visualiza os pontos na linha do tempo / commit
 `git status  ` |  Informa o estado das alterações do nosso projeto
@@ -40,6 +40,7 @@ Comandos | Descrição
 `git push    ` |  Envia alterações locais para o repositório remoto
 `git clone   ` |  Clonar um projeto / repositório
 `git pull    ` |  Puxa do repositório remoto
+`git unstage ` |  Retira todas as mudanças que iriam para a linha do tempo
 
 > **Nota:** Para não precisar adicionar 'user' e 'password' todo vez que efetuar o `git push`.
 ```
