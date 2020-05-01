@@ -20,6 +20,51 @@
 
 ---
 
+## Ferramentas & Utilitários
+
+Nome | Descrição | Semelhante ( Windows )
+--- | --- | ---
+Nautilus | Gerenciador de Arquivos | Windows Explorer
+'Engrenagem' | Configurador de Sistema | 
+Central de Programas | Buscador de Programas na Loja Ubuntu
+GRUB Customaizer | Customizador para o GRUB
+Unit |
+Skype |
+Chromium | Navegador Web Browser | Chrome
+Firefox | Navegador Web Browser
+Dropbox | Armazenamento na Nuvem ( Cloud )
+Geary | Gerenciador de E-mails | Outlook
+Transmission | Cliente Torrent | UTorrent
+qBittorrent | Cliente Torrent
+Brasero | Gerar cópia de CD/DVD | Nero
+K3B | Gerar cópia de CD/DVD | Nero
+Libre Office | Suite de Escritório | Microsoft Office
+Kolour Paint | Edição Básica de Imagens | Paint
+Gimp | Editor de Imagens Profissional | Photoshop
+Steam | Suite de Jogos
+Audacity | Editor de Audio Profissional
+Blender | Gerador de Imagens e Animações 3D | 3D Studio
+Virtualbox | Gerenciador de Máquinas Virtuais
+SimpleScreen Recorder | Gravador de Tela
+KdenLive |
+VLC | Player de Video | Midia Player
+AcetoneISO | Gerador de Imagem ISO
+Shotwell |
+
+### Comunidades - Facebook
+* Ubuntu Linux Brasil
+* Ubuntu Brasil
+* Linux Mint Brasil
+* Linux Brasil 
+
+### Web Sites
+* Ubuntech ( Youtube )
+* Ubuntu Dicas ( Youtube )
+* Ubuntero ( Youtube )
+* Ubuntu-br.org ( Comunidade Brasileira Ubuntu )
+
+
+---
 
 ## Alias no Git
 
